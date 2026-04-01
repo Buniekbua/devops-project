@@ -17,9 +17,9 @@ WORKDIR /app
 
 RUN apk add --no-cache tzdata
 
-RUN adduser -D-g '' appuser
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
-COPY --from=builder /app/main .
+COPY --from=builder --chown=appuser:appgroup /app/main .
 
 USER appuser
 
