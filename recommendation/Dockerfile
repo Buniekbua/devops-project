@@ -21,6 +21,10 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
 COPY --from=builder --chown=appuser:appgroup /app/main .
 
+COPY --from=builder --chown=appuser:appgroup /app/templates ./templates
+
+COPY --from=builder --chown=appuser:appgroup /app/static ./static
+
 USER appuser
 
 EXPOSE 8080
