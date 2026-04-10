@@ -4,20 +4,22 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
-
-COPY . .
+RUN npm install --omit=dev
 
 FROM node:21-alpine
+
+ENV NODE_ENV=production
 
 USER node
 
 WORKDIR /app
 
-ENV NODE_ENV=production
-
 COPY --from=builder --chown=node:node /app/node_modules ./node_modules
-COPY --chown=node:node . .
+COPY --chown=node:node app.js       ./
+COPY --chown=node:node config.json  ./
+COPY --chown=node:node routes/      ./routes/
+COPY --chown=node:node views/       ./views/
+COPY --chown=node:node public/      ./public/
 
 EXPOSE 3000
 

@@ -4,7 +4,7 @@ networks:
 
 services:
   frontend:
-    image: cwannybunny/craftista-frontend:dev
+    image: my/craftista-frontend:dev
     build:
       context: ./frontend
     ports:
@@ -13,7 +13,7 @@ services:
       - craftista
 
   catalogue:
-    image: cwannybunny/craftista-catalogue:dev
+    image: my/craftista-catalogue:dev
     build:
       context: ./catalogue
     ports:
@@ -22,7 +22,7 @@ services:
       - craftista
 
   catalogue-db:
-    image: postgres:16.2-alpine3.19
+    image: postgres:18.3-alpine3.22
     environment:
       POSTGRES_USER: devops
       POSTGRES_PASSWORD: devops
@@ -31,7 +31,7 @@ services:
       - craftista
 
   recco:
-    image: cwannybunny/craftista-recco:dev
+    image: my/craftista-recco:dev
     build:
       context: ./recommendation
     ports:
@@ -40,7 +40,7 @@ services:
       - craftista
 
   voting:
-    image: cwannybunny/craftista-voting:dev
+    image: my/craftista-voting:dev
     build:
       context: ./voting
     ports:
