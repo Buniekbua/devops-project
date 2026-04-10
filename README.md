@@ -21,6 +21,11 @@ Standard Docker images often include unnecessary clutter (compilers, source code
 1. **Build Stage:** Compiles the code using the full development SDK.
 2. **Run Stage:** Copies only the final binary/assets into a smaller image, mostly **Linux Alpine**.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fd7bab98-110e-4fce-a02e-705597e5a47f" width="48%" />
+  <img src="https://github.com/user-attachments/assets/0122a402-00d9-4ed2-ab2f-db4bd3b29874" width="48%" />
+</p>
+
 **The results speak for themselves:**
 
 | Service | Standard Image | Optimized (Multi-stage) | Space Saved |
