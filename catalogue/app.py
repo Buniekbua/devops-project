@@ -61,7 +61,7 @@ def get_product(product_id):
     if product is not None:
         return jsonify(product)
     else:
-        return jsonify({"message":"Product not found"}), 404
+        return jsonify({"message": "Product not found"}), 404
 
 
 def get_system_info():
