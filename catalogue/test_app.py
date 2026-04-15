@@ -6,12 +6,12 @@ logging.basicConfig(level=logging.INFO)
 
 
 class FlaskTest(unittest.TestCase):
-
     @classmethod
     def setUpClass(cls):
         # Wymuszamy tryb JSON dla testów, żeby nie szukał bazy danych
         cls.original_source = config_data.get("data_source")
         config_data["data_source"] = "json"
+
     # Ensure that Flask was set up correctly
     def test_index(self):
         logging.info("TEST-01: Checking if Flask is Setup...")
