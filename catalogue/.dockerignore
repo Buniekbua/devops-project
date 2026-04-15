@@ -1,0 +1,71 @@
+# https://dockerignore.com/dockerignores/languages-python
+# Python-specific files and directories
+
+*$py.class
+**/.cover/
+**/.eggs/
+**/.hatch/
+**/.hypothesis/
+**/.instance/
+**/.mypy_cache/
+**/.nose/
+**/.nox/
+**/.profile_default/
+**/.pybuilder/
+**/.pyenv/
+**/.pypackages/
+**/.pyre/
+**/.pytest_cache/
+**/.pytype/
+**/.ruff_cache/
+**/.tox/
+**/.uv/
+**/.venv/
+**/__pycache__/
+**/__pypackages__/
+**/cover/
+**/cython_debug/
+**/develop-eggs/
+**/downloads/
+**/eggs/
+**/env.bak/
+**/ENV/
+**/env/
+**/lib/
+**/lib64/
+**/parts/
+**/share/python-wheels/
+**/var/
+**/venv.bak/
+**/venv/
+**/virtualenv/
+**/wheels/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# PYTHON PACKAGE MANAGER FILES
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Python package manager files and dependency directories
+
+*.egg
+*.egg-info/
+*.manifest
+*.mo
+*.pot
+*.py,cover
+*.py[cod]
+*.sage.py
+*.spec
+.dmypy.json
+.installed.cfg
+.ipynb_checkpoints
+.nosetests.xml
+.pdm.toml
+.Python
+.python-version
+.scrapy
+.webassets-cache
+celerybeat-schedule
+celerybeat.pid
+MANIFEST
+pip-delete-this-directory.txt
+pip-log.txt
