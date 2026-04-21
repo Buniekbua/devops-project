@@ -43,6 +43,6 @@ func GetDailyOrigami() []Origami {
 			Description: "Be swept away by the breezy elegance of our Origami Windmill, a symbol of sustainable energy and rustic charm. This timeless piece, with its rotating blades, captures the serene and perpetual motion powered by the invisible whispers of the wind. As it spins, it conjures images of sprawling fields of flowers, dotted with these kinetic sculptures, gently turning in a dance with nature, symbolizing a harmonious blend of tradition and future, where man and earth coexist in gentle symbiosis.",
 			ImageUrl:    "/static/images/origami/day7.png",
 		},
-		// Add more origami objects here as desired.
+		// Add more origami objects here as desired
 	}
 }
