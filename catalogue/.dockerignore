@@ -69,3 +69,4 @@ celerybeat.pid
 MANIFEST
 pip-delete-this-directory.txt
 pip-log.txt
+.coverage
