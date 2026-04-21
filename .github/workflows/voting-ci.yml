@@ -1,10 +1,6 @@
 name: Voting CI
 
 on:
-  push: 
-    branches-ignore: [ main ]
-    paths:
-      - 'voting/**'
   pull_request:
     branches: [ main ]
     paths:
@@ -12,7 +8,7 @@ on:
 
 
 jobs:
-  validate-and-test:
+  validate-and-test-Java:
     runs-on: ubuntu-latest
     defaults:
       run:
