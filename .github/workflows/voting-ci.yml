@@ -1,6 +1,10 @@
 name: Voting CI
 
 on:
+  push: 
+    branches-ignore: [ main ]
+    paths:
+      - 'voting/**'
   pull_request:
     branches: [ main ]
     paths:
