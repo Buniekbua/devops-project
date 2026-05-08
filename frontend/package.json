@@ -10,12 +10,18 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "mocha test/*.js"
+    "test": "mocha test/*.js",
+    "lint": "eslint .",
+    "coverage": "nyc mocha test/*.js --exit"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "chai": "^4.3.10",
     "chai-http": "^4.3.0",
+    "eslint": "^10.3.0",
+    "globals": "^17.6.0",
     "mocha": "^10.2.0",
-    "nock": "^13.3.4"
+    "nock": "^13.3.4",
+    "nyc": "^18.0.0"
   }
 }
